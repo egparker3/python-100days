@@ -1,10 +1,12 @@
+#Today is day 1 of my 100 Days of Code: The Complete Python Pro Bootcamp course. April 6th 2022
+print("hello world")
 # Write your code below this line 👇
 print("Hello world!")
 #print function follows parentheses, inside the parentheses you tell it what you want to print.
 #in order to tell computer that something is not code, you need to use quotes
-#Strings: a line of characters, with the quotes showing beginning and end of the string of characters
-#if you don't have the ending quotes, the ending parenthesis will not be the same color as the beginning parenthesis
 #not having ending quotes produces a Syntax Error
+#Strings: a line of characters, with the quotes showing beginning and end of the string of characters
+#if you don't have the ending quotes, the ending parenthesis will not be the same color as the beginning parenthesis 
 #if you come across a red error, copy and paste the error into google, with stackoverflow.com usually having an answer
 #OK, the first assignement she gave us is through Coding Rooms, and the input is the following:
 print("Day 1 - Python Print Function")
@@ -13,7 +15,7 @@ print("print('what to print')")
 #I got the answer correct on the first try!
 #using double quotes or single quotes doesn't matter for printing
 print('hello')
-#however, if you want to have a quote inside a quote, you need to use the single quote inside the double quote, so that the computer knows where your strings are. If you used a double quote then another double quote, it would think your string is the print and the function/code comes after the first double quote.
+#however, if you want to have a quote inside a quote, you need to use the single quote inside the double quote, so that the computer knows where your strings are. If you used a double quote then another double quote, it would think your string is the print and the function/code comes after the first double quote. 
 #4/7/2022
 #either you can use the Print function on each line to write code on each line, or you can use the \n function inside of double quotes to print on separate lines
 print("hello world!\nhello world")
@@ -47,3 +49,27 @@ print(len(input("What is your name? ")))
 #watching her solution, she DID add the space so it must have been a strange error
 #you can input spaces inside of the functions to make it more clear
 print( len( input("What is your name? ") ) )
+
+#Variables are words assigned to functions / actions
+name = input("What is your name?")
+print(name)
+
+# this was the last project in day 1:
+# 🚨 Don't change the code below 👇
+a = input("a: ")
+b = input("b: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+
+c = a
+a = b 
+b = c 
+
+#Write your code above this line 👆
+####################################
+
+# 🚨 Don't change the code below 👇
+print("a: " + a)
+print("b: " + b)
