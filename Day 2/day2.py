@@ -68,3 +68,52 @@ print(int(x) + int(y))
 c = int(two_digit_number[0])
 d = int(two_digit_number[1])
 print(c + d)
+
+#4/13/2022
+
+# 3 + 5 addition
+# 3 - 5 subtraction
+# 3 * 5 multiplication
+# 3 / 5 division
+# whenever you're dividing, you get a float number. 
+# ** is an exponent 
+# 3**2 = 9
+
+# order of PEMDAS 
+# parentheses
+# exponents
+# multiplication & division
+# addition & subtraction
+# the one most to the left will be done first for M and D, and A and S
+
+#this was the code challenge she had us do which was a BMI calculator
+
+# 🚨 Don't change the code below 👇
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+#bmi = weight/height^2
+#height and weight are strings
+
+height_float = float(height)
+weight_float = float(weight)
+
+bmi = int(weight_float / (height_float ** 2))
+
+print(bmi)
+
+#what the teacher did was this:
+
+# bmi = int(weight) / float(height) ** 2
+#bmi_as_int = int(bmi)
+
+#but i wonder if we could do this too:
+
+bmi = int(int(weight) / float(height) ** 2)
+print(bmi)
+
+#yep that worked! 
+#in her solution, she als did it like i did with converting beforehand
