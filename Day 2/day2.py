@@ -117,3 +117,53 @@ print(bmi)
 
 #yep that worked! 
 #in her solution, she als did it like i did with converting beforehand
+
+# 4/16/2022
+# if you do print(8 / 3) it becomes 2.66666666
+# then if you do print(int(8 / 3)) it just truncates it to 2, instead of rouding up to 3 
+print(8/3)
+print(int(8/3))
+# can just use the round() function
+print(round(8/3))
+#in the round() function, you can add a comma and then specify how many digits you'd like it to come out to after the decimal ; decimal places
+print(round(8/3,2))
+#whenever you divide a number by another number, the result is always a floating point number
+#the floor division, or // , always truncates a floating point number in the same way, without rouding. turns it into an Integer
+#8//3 = 2
+print(8 //3)
+#even a whole division is a floating point number, ex:
+# 4 / 2 = 2.0
+print(4 / 2)
+
+#the following gives result as 2, then the /= divides again by 2, which equals 1
+result = 4 / 2
+result /= 2
+print(result)
+# the /= uses the previous result as a short hand, instead of using:
+#result = result/2
+
+#another example:
+
+score = 0
+
+#then, instead of saying, 
+#score = score + 1
+score += 1
+print(score)
+#this is handy when you need to manipulate a value based on its previous value
+
+#f-strings
+
+#instead of having to convert a bunch of different data types and use + signs to print a string of concatinated things, can use f-string
+
+score = 0
+height = 1.8
+isWinning = True
+
+# in order to print this without f string, would need to do:
+#print("your score is " + str(score) + str(height)) and so on
+#you add the character f in front of your string
+#f"your score is {}" these are curly brackets
+
+print(f"your score is {score}, your height is{height}, you are winning is {isWinning}")
+#f-strings turn everything into a string
